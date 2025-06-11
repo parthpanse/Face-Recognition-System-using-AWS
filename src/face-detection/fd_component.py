@@ -12,12 +12,12 @@ from awscrt import mqtt
 from awsiot import mqtt_connection_builder
 from facenet_pytorch import MTCNN
 
-REGION = 'us-east-1'
-THING_NAME = '1230031818-IoTThing'
+REGION = '<region>'
+THING_NAME = '<thing-name>'
 TOPIC = f'clients/{THING_NAME}'
-SQS_REQUEST_QUEUE_URL = 'https://sqs.us-east-1.amazonaws.com/619071330649/1230031818-req-queue'
-SQS_RESPONSE_QUEUE_URL = 'https://sqs.us-east-1.amazonaws.com/619071330649/1230031818-resp-queue'
-IOT_ENDPOINT = 'ap9hdxkvj2x4s-ats.iot.us-east-1.amazonaws.com'
+SQS_REQUEST_QUEUE_URL = '<request-queue-url>'
+SQS_RESPONSE_QUEUE_URL = '<response-queue-url>'
+IOT_ENDPOINT = '<iot-endpoint>'
 
 sqs = boto3.client('sqs', region_name=REGION)
 

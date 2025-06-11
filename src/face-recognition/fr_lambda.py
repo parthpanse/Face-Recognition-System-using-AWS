@@ -8,12 +8,12 @@ import numpy as np
 from PIL import Image
 from facenet_pytorch import MTCNN
 
-REGION = "us-east-1"
-SQS_RESPONSE_QUEUE_URL = "https://sqs.us-east-1.amazonaws.com/619071330649/1230031818-resp-queue"
+REGION = "<region>"
+SQS_RESPONSE_QUEUE_URL = "<response-queue-url>"
 sqs = boto3.client("sqs", region_name=REGION)
 
-MODEL_PATH = "resnetV1.pt"
-MODEL_WT_PATH = "resnetV1_video_weights.pt"
+MODEL_PATH = "<model-path>"
+MODEL_WT_PATH = "<model-wt-path>"
 
 class face_recognition:
     def face_recognition_func(self, model_path, model_wt_path, face_img_path):
