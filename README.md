@@ -1,4 +1,4 @@
-# Cloud Computing Project 2: Face Detection and Recognition System
+# Face Detection and Recognition System
 
 This project implements a distributed face detection and recognition system using AWS cloud services. The system processes video frames to detect faces and recognize individuals using a serverless architecture.
 
